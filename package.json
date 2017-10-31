@@ -1,0 +1,50 @@
+{
+  "name": "gulp-vueify",
+  "version": "1.0.0",
+  "description": "gulp compile vue by vueify and browserify",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "es2015"
+          ]
+        }
+      ]
+    ]
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^7.3.0",
+    "browser-sync": "^2.18.8",
+    "browserify": "^14.1.0",
+    "event-stream": "^3.3.4",
+    "gulp": "^3.9.1",
+    "gulp-assets-plus": "^0.9.9",
+    "gulp-clean": "^0.3.2",
+    "gulp-if": "^2.0.2",
+    "gulp-md5-assets": "^0.2.0",
+    "gulp-md5-plus": "^1.0.2",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-streamify": "^1.0.2",
+    "gulp-tap": "^0.4.2",
+    "gulp-uglify": "^2.1.2",
+    "gulp-util": "^3.0.8",
+    "node-sass": "^4.5.2",
+    "vinyl-source-stream": "^1.1.0",
+    "vueify": "^9.4.1",
+    "watchify": "^3.9.0",
+    "yargs": "^7.1.0"
+  },
+  "dependencies": {
+    "vue": "^2.2.6"
+  }
+}
